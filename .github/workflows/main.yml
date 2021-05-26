@@ -34,5 +34,9 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Installing Surge
         run: npm install --global surge
-      - name: Deploying using surge
+        
+      - name: Deploying Bank Home project on surge
         run: surge ./1_BankHome/ bank-front.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        
+      - name: Deploying Expanding cards project on surge
+        run: surge ./2_ExpandingCards/ expanding-card.surge.sh --token ${{ secrets.SURGE_TOKEN }}
