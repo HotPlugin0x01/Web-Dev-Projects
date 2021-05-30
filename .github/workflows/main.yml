@@ -40,3 +40,6 @@ jobs:
         
       - name: Deploying Expanding cards project on surge
         run: surge ./2_ExpandingCards/ expanding-card.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        
+      - name: Deploying Progress Steps project on surge
+        run: surge ./3_ProgressSteps/ progress-steps.surge.sh --token ${{ secrets.SURGE_TOKEN }}
