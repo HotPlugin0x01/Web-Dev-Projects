@@ -43,3 +43,6 @@ jobs:
         
       - name: Deploying Progress Steps project on surge
         run: surge ./3_ProgressSteps/ progress-steps.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+
+      - name: Deploying Rotating Nav-bar project on surge
+        run: surge ./4_RotatingNavigationBar/ rotating-navbar.surge.sh --token ${{ secrets.SURGE_TOKEN }}
